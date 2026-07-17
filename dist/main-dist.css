@@ -2338,27 +2338,27 @@ footer:after {
 | Per-Category Banner Image      |
 \*------------------------------*/
 [data-query*='status":1'] {
-    --banner: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
+    --banner: url("https://github.com/ivinluan/project-ahroy/blob/main/assets/backgrounds/all-anime.png");
 }
 
 [data-query*='status":2'] {
-    --banner: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
+    --banner: url("https://github.com/ivinluan/project-ahroy/blob/main/assets/backgrounds/watching.png");
 }
 
 [data-query*='status":3'] {
-    --banner: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
+    --banner: url("https://github.com/ivinluan/project-ahroy/blob/main/assets/backgrounds/completed.png");
 }
 
 [data-query*='status":4'] {
-    --banner: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
+    --banner: url("https://github.com/ivinluan/project-ahroy/blob/main/assets/backgrounds/on-hold.png");
 }
 
 [data-query*='status":6'] {
-    --banner: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
+    --banner: url("https://github.com/ivinluan/project-ahroy/blob/main/assets/backgrounds/dropped.png");
 }
 
 [data-query*='status":7'] {
-    --banner: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
+    --banner: url("https://github.com/ivinluan/project-ahroy/blob/main/assets/backgrounds/plan-to-watch.png");
 }
 
 /*------------------------E-N-D-*/
