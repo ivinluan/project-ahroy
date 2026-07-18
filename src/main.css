@@ -50,12 +50,12 @@
 
 :root {
     /* Theme */
-    --name: "Project Archive";
+    --name: none;
 
     /* Assets */
-    --avatar: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
-    --banner: url(https://i.imgur.com/VoPJz2S.jpg);
-    --character: url(https://i.imgur.com/6IPyngH.png);
+    --avatar: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/avatar/webp/avatar.webp);
+    --banner: none;
+    --character: none;
     --background: none;
 
     /* Background */
@@ -2237,38 +2237,38 @@ html:not(.dark-mode) #fancybox-frame {
 
 [data-query*='"status":7'] {
     /* all anime */
-    --render-left: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8) right bottom / contain;
-    --render-right: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8) left bottom / contain;
+    --render-left: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/right/webp/all-anime.webp) right bottom / contain;
+    --render-right: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/left/webp/all-anime.webp) left bottom / contain;
 }
 
 [data-query*='"status":1'] {
     /* watching */
-    --render-left: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8) right bottom / contain;
-    --render-right: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8) left bottom / contain;
+    --render-left: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/right/webp/watching.webp) right bottom / contain;
+    --render-right: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/left/webp/watching.webp) left bottom / contain;
 }
 
 [data-query*='"status":2'] {
     /* completed */
-    --render-left: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8) right bottom / contain;
-    --render-right: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8) left bottom / contain;
+    --render-left: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/right/webp/completed.webp) right bottom / contain;
+    --render-right: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/left/webp/completed.webp) left bottom / contain;
 }
 
 [data-query*='"status":3'] {
     /* on hold */
-    --render-left: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8) right bottom / contain;
-    --render-right: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8) left bottom / contain;
+    --render-left: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/right/webp/on-hold.webp) right bottom / contain;
+    --render-right: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/left/webp/on-hold.webp) left bottom / contain;
 }
 
 [data-query*='"status":4'] {
     /* dropped */
-    --render-left: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8) right bottom / contain;
-    --render-right: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8) left bottom / contain;
+    --render-left: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/right/webp/dropped.webp) right bottom / contain;
+    --render-right: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/left/webp/dropped.webp) left bottom / contain;
 }
 
 [data-query*='"status":6'] {
     /* planned */
-    --render-left: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8) right bottom / contain;
-    --render-right: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8) left bottom / contain;
+    --render-left: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/right/webp/plan-to-watch.webp) right bottom / contain;
+    --render-right: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/left/webp/plan-to-watch.webp) left bottom / contain;
 }
 
 /* Left Render */
@@ -2331,27 +2331,27 @@ footer:after {
 | Per-Category Character Image   |
 \*------------------------------*/
 [data-query*='status":1'] {
-    --character: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
+    --character: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/top/webp/watching.webp);
 }
 
 [data-query*='status":2'] {
-    --character: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
+    --character: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/top/webp/completed.webp);
 }
 
 [data-query*='status":3'] {
-    --character: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
+    --character: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/top/webp/on-hold.webp);
 }
 
 [data-query*='status":4'] {
-    --character: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
+    --character: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/top/webp/dropped.webp);
 }
 
 [data-query*='status":6'] {
-    --character: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
+    --character: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/top/webp/plan-to-watch.webp);
 }
 
 [data-query*='status":7'] {
-    --character: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
+    --character: url(https://raw.githubusercontent.com/ivinluan/project-ahroy/refs/heads/main/assets/characters/top/webp/all-anime.webp);
 }
 
 /*------------------------E-N-D-*/
