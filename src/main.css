@@ -235,7 +235,7 @@ body {
 .list-container {
     position: static;
     width: 100%;
-    background: 0 0 !important;
+    background: transparent !important;
     border: none
 }
 
@@ -303,49 +303,16 @@ a:hover {
 
 #list-container #cover-image-container {
     display: block !important;
-    width: 1060px;
+    width: min(1060, calc(100% - 48px));
+    max-width: 1060;
     height: 100%;
+    margin: 0 auto;
     padding: 0;
-    background: var(--character) no-repeat right center/contain;
-    margin: 0 auto
-}
-
-#cover-image-container:after {
-    content: var(--name);
-    position: absolute;
-    top: 55px;
-    left: 50%;
-    margin-left: -475px;
-    color: var(--banner-text);
-    font: bold 60px/60px Oswald;
-    text-align: left;
-    letter-spacing: 15px;
-    text-shadow: 1px 4px 7px var(--banner-text-shadow);
-    text-transform: uppercase;
-    white-space: pre;
-    transform: scale(.9) perspective(350px) rotateY(8deg) rotateZ(-3deg);
-    animation: 3s .5s backwards name-slide
-}
-
-@keyframes name-slide {
-    0% {
-        top: 12px;
-        margin-left: -535px;
-        opacity: 0;
-        letter-spacing: 0;
-        animation-timing-function: ease-out
-    }
-
-    90% {
-        top: 55px;
-        margin-left: -475px
-    }
-
-    100% {
-        letter-spacing: 15px;
-        opacity: 1;
-        animation-timing-function: cubic-bezier(0, 0, .75, 1)
-    }
+    background:
+        linear-gradient(90deg,
+            transparent 35%,
+            rgba(11, 13, 16, .15) 100%),
+        var(--character) no-repeat right bottom / contain;
 }
 
 .header {
@@ -379,7 +346,7 @@ div[style="padding-top: 8px"] {
 
 .header .header-title {
     position: static;
-    margin-left: 155px;
+    margin-left: 105px;
     order: 1;
     z-index: 1
 }
@@ -525,7 +492,7 @@ div[style="padding-top: 8px"] {
 .status-menu {
     position: relative;
     display: block !important;
-    width: 1060px;
+    width: 1200px;
     padding: 0 0 0 173px;
     margin: 0 auto;
     box-sizing: border-box
@@ -557,17 +524,22 @@ div[style="padding-top: 8px"] {
 }
 
 .status-menu .status-button {
-    display: inline-block !important;
-    height: 32px;
-    padding: 16px 0 !important;
-    margin: 0 15px !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 0 !important;
+    margin: 0 18px !important;
     color: var(--text-head) !important;
-    font-size: 17.6px !important;
+    font-family: var(--font-heading) !important;
+    font-size: 18px !important;
+    font-weight: 500;
     line-height: 30px;
-    white-space: nowrap;
-    font-family: Oswald !important;
     text-transform: uppercase;
-    letter-spacing: 1px
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+    transition:
+        color var(--transition),
+        transform var(--transition);
 }
 
 .status-menu .status-button.on {
@@ -686,7 +658,7 @@ div[style="padding-top: 8px"] {
     display: block;
     width: 904px;
     height: 0;
-    padding-left: 155px;
+    padding-left: 50px;
     margin: 0 auto;
     border: none;
     background: 0 0;
@@ -733,7 +705,7 @@ div[style="padding-top: 8px"] {
 
 [data-owner="1"] .list-menu-float .icon-menu.profile {
     position: absolute;
-    left: 0;
+    left: -123px;
     top: -43px;
     display: block !important;
     width: 150px !important;
@@ -1076,11 +1048,15 @@ i.fa-chart-column::before {
     content: "No entries found. Perhaps your search terms are too restrictive?"
 }
 
+.list-table-data {
+    padding-left: 0px;
+}
+
 .data.status {
     position: absolute;
     top: 0;
     left: 0;
-    width: 1px !important;
+    width: 5px !important;
     height: 100%
 }
 
@@ -1756,7 +1732,7 @@ footer {
 
 #footer-block {
     min-width: 1060px;
-    height: 32px;
+    height: 38px;
     padding: 16px 0
 }
 
@@ -1778,7 +1754,7 @@ footer {
 }
 
 #copyright:after {
-    content: "\aList design by Valerio Lyndon.";
+    content: "\aList design by Valerio Lyndon.\aModified by cosmicdeath";
     white-space: pre
 }
 
@@ -2135,36 +2111,6 @@ div[style^="width: 300px;"] input {
     image-rendering: -webkit-optimize-contrast
 }
 
-/*-S-T-A-R-T--------------------*\
-| Dark Mode R3.5                 |
-\*------------------------------*/
-:root {
-    --banner: url(https://i.imgur.com/WaLokPG.jpg);
-    --character: url(https://i.imgur.com/h8HW1jf.png);
-    --pbg: #161616;
-    --bg: #212121;
-    --bg-dark: #444;
-    --text: #ababab;
-    --text-h: #416abe;
-    --text-dim: #777;
-    --text-dim-h: #999;
-    --text-dark: #ababab;
-    --shadow: rgba(0, 0, 0, 0.8);
-    --icon: #959595;
-    --accent: #416abe;
-    --banner-text: #f6f5ff;
-    --banner-text-shadow: #e4bef4;
-    --btn-bg: #191919;
-    --btn-bg-h: #ababab;
-    --btn-head-bg-h: #416abe;
-    --btn-text-h: #212121;
-    --text-head: #9b9b9b;
-    --text-head-h: #ababab;
-    --cover-bg: #090909;
-    --edit-btn: #323232;
-    --checkmark: #416abe
-}
-
 .cover-block:before {
     background: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0))
 }
@@ -2177,10 +2123,6 @@ div[style^="width: 300px;"] input {
     background: linear-gradient(to top, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0))
 }
 
-.data.score select {
-    background-image: url(https://i.imgur.com/hFijppc.png)
-}
-
 #fancybox-overlay {
     opacity: .35 !important
 }
@@ -2190,24 +2132,13 @@ div[style^="width: 300px;"] input {
     box-shadow: 0 0 32px rgba(0, 0, 0, .75)
 }
 
-html:not(.dark-mode) #fancybox-frame {
-    -webkit-filter: invert(87.8%) hue-rotate(197deg);
-    filter: invert(87.8%) hue-rotate(197deg)
-}
-
-#advanced-options [class*="-widget"] select {
-    background-image: url(https://i.imgur.com/KF8oOyC.png)
-}
-
-/*------------------------E-N-D-*/
-
 /*-S-T-A-R-T--------------------*\
 | Review Tags R0.1               |
 \*------------------------------*/
 
 /* Raise or lower this number to change how wide the box is. Make sure not to remove the "px" at the end. */
 .data.tags {
-    width: 240px;
+    width: 200px;
 }
 
 .data.tags div:not(:empty) {
@@ -2357,42 +2288,12 @@ footer:after {
 /*------------------------E-N-D-*/
 
 /*-S-T-A-R-T--------------------*\
-| Per-Category Background Image  |
-\*------------------------------*/
-[data-query*='status":1'] {
-    --background: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
-}
-
-[data-query*='status":2'] {
-    --background: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
-}
-
-[data-query*='status":3'] {
-    --background: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
-}
-
-[data-query*='status":4'] {
-    --background: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
-}
-
-[data-query*='status":6'] {
-    --background: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
-}
-
-[data-query*='status":7'] {
-    --background: url(https://cdn.myanimelist.net/s/common/userimages/8f71b8ad-f3fe-4191-813c-503747c8ae6d_225w?s=7be738035d6905a75ab132bfbf7577e8);
-}
-
-/*------------------------E-N-D-*/
-
-/*-S-T-A-R-T--------------------*\
 | Background Tint                |
 \*------------------------------*/
 
 body::before {
     /* change colour here */
     background: rgba(78, 38, 38, 0.8);
-
     content: "";
     z-index: -1;
     position: fixed;
@@ -2400,20 +2301,6 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-/*------------------------E-N-D-*/
-
-/*-S-T-A-R-T--------------------*\
-| Change Status Bar Width        |
-\*------------------------------*/
-
-.data.status {
-    width: 5px !important;
-}
-
-.list-table-data {
-    padding-left: 0px;
 }
 
 /*------------------------E-N-D-*/
